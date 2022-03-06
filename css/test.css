@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display:flex;
+    justify-content: center;
+    height: 30vh;
+}
+
+.blinder {
+    background-color: black;
+    min-width: 0px;
+    min-height: 0px;
+    flex-grow: 1;
+}
+.window {
+    background-color: grey;
+    width: 1080px;
+    min-height: 0px;
+}
