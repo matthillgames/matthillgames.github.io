@@ -89,13 +89,14 @@ ul {
 
 .hero {
     height: 85vh;
+    position:relative;
     background-color: transparent;
     display: flex;
     justify-content: center;
     font-size: 1.3em;
 }
 .hero video {
-    position: fixed;
+    position: absolute;
     object-fit: cover;
     top: 0;
     width: 100%;
