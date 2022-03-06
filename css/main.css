@@ -97,8 +97,9 @@ ul {
 .hero video {
     position: fixed;
     object-fit: cover;
-    top: 10vh;
+    top: 0;
     width: 100%;
+    min-height: 100%;
     z-index: -10;
 }
 .hero .container {
