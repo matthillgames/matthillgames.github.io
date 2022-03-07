@@ -166,7 +166,7 @@ ul {
     width: 100%;
 }
 .portfolio__item p {
-    font-size:1.2em;
+    font-size:.9em;
     position:absolute;
     text-align: center;
     vertical-align: middle;
@@ -188,4 +188,34 @@ ul {
 .about {
     height: 70vh;
     background-color: pink;
+}
+
+@media screen and (min-width: 340px) {
+    .portfolio__item p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .portfolio__item {
+        width: 48%;
+    }
+    .portfolio__item p {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .portfolio__item p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .portfolio__item {
+        width: 30%;
+    }
+    .portfolio__item p {
+        font-size: 1em;
+    }
 }
