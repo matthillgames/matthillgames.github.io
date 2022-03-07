@@ -158,6 +158,9 @@ ul {
     margin: 3px 0px;
     background-color: black;
 }
+.portfolio__item u{
+    color: var(--site-link-color)
+}
 .portfolio__item img {
     display:block;
     width: 100%;
