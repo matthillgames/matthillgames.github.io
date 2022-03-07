@@ -176,11 +176,10 @@ ul {
     background-color: rgba(0, 0, 0, 0.699);
 }
 .portfolio__item a {
-    opacity:0;
+    display:none;
 }
-.portfolio__item a:hover{
-    opacity: 1;
-    transition: opacity 0.25s linear;
+.portfolio__item:hover a{
+    display:block;
 }
 
 .about {
