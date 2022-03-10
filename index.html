@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
+    <script>
+        window.onscroll = (e) => { 
+            var myvideo = document.getElementById("vid");
+            if (window.scrollY > 100){
+                myvideo.pause();
+                myvideo.classList.add('dim-video');
+            }
+            else{
+                myvideo.play();
+                myvideo.classList.remove('dim-video');
+            }
+        }
+    </script>
+
 </head>
 <body>
     <div class="section nav-bar">
@@ -26,13 +40,15 @@
     </div>
 
     <div class="section hero">
-        <video autoplay muted loop playsinline><source src="media/background.mp4" type="video/mp4"></video> 
+        <video autoplay muted loop playsinline id="vid"><source src="media/background.mp4" type="video/mp4"></video> 
         <div class="hero__margin"></div>
         <div class="container">
-            <img src="media/photo.jpeg" alt="photo" class="hero__image">
-            <div class="hero__name">Matt Hill</div>
-            <div class="hero__description">Game Designer and Programmer</div>
-            <a href="http://matthill.itch.io" class="hero__website-link">matthill.itch.io</a>
+            <div class="subcontainer">
+                <img src="media/photo.jpeg" alt="photo" class="hero__image">
+                <div class="hero__name">Matt Hill</div>
+                <div class="hero__description">Game Designer and Programmer</div>
+                <a href="http://matthill.itch.io" class="hero__website-link">matthill.itch.io</a>
+            </div>
         </div>
         <div class="hero__margin"></div>
     </div>
@@ -53,6 +69,7 @@
         </div>
     </div>
 
+    <!--
     <div class="section section-header">
         <div class="container">About</div>
         <div class="section-header__target" id="about"></div>
@@ -63,5 +80,6 @@
 
         </div>
     </div>
+    -->
 </body>
 </html>
